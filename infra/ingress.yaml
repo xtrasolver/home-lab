@@ -12,7 +12,7 @@ spec:
     helm:
       releaseName: ingress
       valueFiles:
-        - values/ingress.yaml
+        - infra/values/ingress.yaml
   destination:
     server: "https://kubernetes.default.svc"
     namespace: ingress

@@ -12,7 +12,7 @@ spec:
     helm:
       releaseName: metallb
       valueFiles:
-        - values/metallb.yaml
+        - infra/values/metallb.yaml
   destination:
     server: "https://kubernetes.default.svc"
     namespace: metallb
