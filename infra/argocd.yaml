@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: infra-ingress
+  name: infra-argocd
   namespace: argocd
 spec:
   project: default
@@ -15,7 +15,7 @@ spec:
       - values/argocd.yaml   
   destination:
     server: "https://kubernetes.default.svc"
-    namespace: ingress
+    namespace: argocd
   syncPolicy:
     automated: {}
     syncOptions:
