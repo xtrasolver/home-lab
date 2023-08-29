@@ -6,7 +6,7 @@ server:
     tls:
     - hosts:
         - argocd.my-lab.cz
-      secretName: tls-argocd.cottage.my-lab.cz
+      secretName: tls-argocd.my-lab.cz
     https: true
     ingressClassName: "nginx"
     annotations:
